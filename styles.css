@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=League+Spartan&family=Poppins&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.canvas {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modes {
+  width: 600px;
+  height: 100px;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.cell {
+  flex: 1;
+}
+
+.header {
+  width: 400px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+}
