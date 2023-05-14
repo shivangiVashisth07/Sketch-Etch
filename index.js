@@ -6,12 +6,18 @@ const header = document.createElement("div");
 const footer = document.createElement("div");
 let defaultColor = "black";
 const h2 = document.createElement("div");
+const h3 = document.createElement("div");
+const colorInput = document.createElement("input");
 
 canvas.setAttribute("class", "canvas");
 buttons.setAttribute("class", "buttons");
 header.setAttribute("class", "header");
 footer.setAttribute("class", "footer");
 h2.setAttribute("class", "h2");
+h3.setAttribute("class", "h3");
+colorInput.setAttribute("type", "color");
+colorInput.setAttribute("value", "black");
+colorInput.setAttribute("class", "colorPicker");
 
 header.textContent = "Etch a sketch";
 
@@ -28,16 +34,6 @@ function grid(num) {
   }
 }
 
-// fill color onmouseOver
-function fillColor() {
-  const cells = document.querySelectorAll(".cell");
-  cells.forEach((cell) => {
-    cell.addEventListener("mouseover", (e) => {
-      e.target.style.background = "black";
-    });
-  });
-}
-
 //default grid of 20 x 20
 grid(20);
 
@@ -47,6 +43,7 @@ container.appendChild(header);
 container.appendChild(canvas);
 container.appendChild(buttons);
 buttons.appendChild(h2);
+
 body.appendChild(container);
 
 h2.textContent = "Grid Size: ";
@@ -89,6 +86,20 @@ btn3.addEventListener("click", () => {
   grid(20);
   fillColor();
 });
+
+buttons.appendChild(h3);
+h3.textContent = "Choose Color: ";
+buttons.appendChild(colorInput);
+
+// fill color onmouseOver
+function fillColor() {
+  const cells = document.querySelectorAll(".cell");
+  cells.forEach((cell) => {
+    cell.addEventListener("mouseover", (e) => {
+      e.target.style.background = colorInput.value;
+    });
+  });
+}
 
 fillColor();
 
