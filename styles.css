@@ -7,6 +7,8 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  background-color: #4f4557;
+  padding: 40px;
 }
 
 .container {
@@ -17,6 +19,8 @@ body {
   align-items: center;
   gap: 30px;
   padding: 30px;
+  background-color: #e7cbcb;
+  border-radius: 20px;
 }
 
 .canvas {
@@ -24,12 +28,12 @@ body {
   height: 600px;
   display: flex;
   flex-direction: column;
-
+  background-color: #f6f1f1;
   padding: 0;
 }
 
-div {
-  border: 1px solid purple;
+.cell {
+  border: 1px solid #e7cbcb;
 }
 
 .row {
@@ -45,17 +49,20 @@ div {
 
 .header {
   width: 400px;
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
   font-family: "Dancing Script", cursive;
-  font-weight: 800;
+  font-weight: 900;
+  color: #643843;
 }
 
 .h2,
 .h3 {
   font-family: "Dancing Script", cursive;
   padding: 3px;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 25px;
+  color: #643843;
 }
 
 .buttons {
@@ -71,7 +78,8 @@ div {
   padding: 25px;
   font-size: small;
   font-family: "Dancing Script", cursive;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 900;
+  color: #e7cbcb;
 }

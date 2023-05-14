@@ -46,7 +46,7 @@ buttons.appendChild(h2);
 
 body.appendChild(container);
 
-h2.textContent = "Grid Size: ";
+h2.textContent = "Grid Size:  ";
 
 // button1 for 60 x 60 grid
 const btn1 = document.createElement("button");
@@ -88,7 +88,8 @@ btn3.addEventListener("click", () => {
 });
 
 buttons.appendChild(h3);
-h3.textContent = "Choose Color: ";
+h3.textContent = "Choose Color:  ";
+// color picker
 buttons.appendChild(colorInput);
 
 // fill color onmouseOver
