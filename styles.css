@@ -12,7 +12,8 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +25,8 @@ body {
 }
 
 .canvas {
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -34,13 +36,15 @@ body {
 
 .cell {
   border: 1px solid #e7cbcb;
+  flex: 1;
 }
 
 .row {
   display: flex;
   flex: 1;
   justify-content: center;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .cell {
@@ -48,7 +52,8 @@ body {
 }
 
 .header {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   font-size: 60px;
   text-align: center;
   font-family: "Dancing Script", cursive;
@@ -66,7 +71,8 @@ body {
 }
 
 .buttons {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -74,7 +80,8 @@ body {
   gap: 8px;
 }
 .footer {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   padding: 25px;
   font-size: small;
   font-family: "Dancing Script", cursive;
